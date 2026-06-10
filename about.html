@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <title>여의도 노래방 정보 | 겁나 쩌는 노래방 찐 후기</title>
+    <meta name="description" content="여의도 노래방 진짜 정보 다 모았다. 형들이 직접 가보고 추천하는 노래방, 가격, 꿀팁까지. 국회의사당부터 증권가까지 여의도 노래방 완전정복.">
+    <meta name="keywords" content="여의도 노래방, 여의도 노래방 추천, 여의도 코인노래방, 여의도 가성비 노래방, 여의도 룸노래방, 여의도 이색노래방">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="여의도 노래방 형들">
+    <link rel="canonical" href="https://t3b05-yd-kb-info.vercel.app/">
+    <meta property="og:title" content="여의도 노래방 정보 | 겁나 쩌는 노래방 찐 후기">
+    <meta property="og:description" content="여의도 노래방 진짜 정보 다 모았다. 형들이 직접 가보고 추천하는 노래방, 가격, 꿀팁까지. 국회의사당부터 증권가까지 여의도 노래방 완전정복.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t3b05-yd-kb-info.vercel.app/">
+    <meta property="og:image" content="https://t3b05-yd-kb-info.vercel.app/og-image.jpg">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="여의도 노래방 정보 | 겁나 쩌는 노래방 찐 후기">
+    <meta name="twitter:description" content="여의도 노래방 진짜 정보 다 모았다. 형들이 직접 가보고 추천하는 노래방, 가격, 꿀팁까지. 국회의사당부터 증권가까지 여의도 노래방 완전정복.">
+    <style>
+        /* RESET */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; background-color: #0d0d0d; color: #e0e0e0; }
+        body { font-family: 'Courier New', Courier, monospace; line-height: 1.6; }
+        a { color: #ff2a6d; text-decoration: underline wavy #ff2a6d 1px; text-underline-offset: 4px; transition: all 0.2s; }
+        a:hover { color: #05d9e8; text-decoration-color: #05d9e8; background: rgba(255,42,109,0.15); }
+        /* 모든 섹션 full-bleed */
+        header, nav, main, section, footer { width: 100%; max-width: 100%; padding: 0 1rem; }
+        /* ---- Layout DNA ---- */
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; }
+        @media (max-width: 768px) { .container { padding: 1.5rem 0.75rem; } }
+        /* ---- Brutalist Typography ---- */
+        h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; text-transform: uppercase; letter-spacing: -0.05em; line-height: 1; border-left: 8px solid #ff2a6d; padding-left: 1rem; margin-bottom: 1.5rem; color: #05d9e8; text-shadow: 0 0 0.5rem #ff2a6d; }
+        h2 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 800; text-transform: uppercase; letter-spacing: -0.03em; border-bottom: 4px double #ff2a6d; padding-bottom: 0.5rem; margin: 2rem 0 1.2rem; color: #ff2a6d; }
+        h3 { font-size: clamp(1.3rem, 2.5vw, 1.8rem); font-weight: 700; text-transform: uppercase; letter-spacing: -0.02em; color: #05d9e8; margin-bottom: 0.8rem; }
+        /* ---- Navigation ---- */
+        nav { background: #1a1a1a; border-bottom: 3px solid #ff2a6d; padding: 0.8rem 1rem; position: sticky; top: 0; z-index: 999; }
+        nav .container { display: flex; justify-content: space-between; align-items: center; padding: 0; }
+        .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+        .nav-links a { font-weight: 700; font-size: 1rem; text-decoration: none; border: 2px solid transparent; padding: 0.3rem 0.6rem; transition: 0.2s; color: #e0e0e0; }
+        .nav-links a:hover { border-color: #ff2a6d; background: #ff2a6d22; color: #05d9e8; }
+        .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 0.3rem; }
+        .hamburger span { width: 28px; height: 3px; background: #ff2a6d; display: block; border-radius: 2px; }
+        @media (max-width: 768px) {
+            .hamburger { display: flex; }
+            .nav-links { display: none; flex-direction: column; background: #1a1a1a; width: 100%; position: absolute; top: 60px; left: 0; padding: 1rem; border-bottom: 3px solid #ff2a6d; gap: 0.8rem; }
+            .nav-links.active { display: flex; }
+            .nav-links a { font-size: 1.2rem; border-bottom: 1px dashed #333; padding: 0.5rem 0; }
+        }
+        /* ---- Brutalist Cards ---- */
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+        .card { background: #141414; border: 2px solid #ff2a6d; padding: 1.5rem; transition: 0.2s; box-shadow: 8px 8px 0 #0d0d0d; }
+        .card:hover { border-color: #05d9e8; transform: translate(-4px, -4px); box-shadow: 12px 12px 0 #0d0d0d; }
+        .card h3 { margin-top: 0; }
+        .card p { margin: 0.5rem 0; color: #b0b0b0; }
+        .card .price { font-size: 1.8rem; font-weight: 900; color: #ff2a6d; }
+        .card .tag { display: inline-block; background: #ff2a6d; color: #0d0d0d; padding: 0.2rem 0.6rem; font-size: 0.8rem; font-weight: bold; letter-spacing: 0.05em; margin-top: 0.5rem; }
+        /* ---- FAQ ---- */
+        .faq-item { border-left: 4px solid #ff2a6d; padding: 1rem 1.2rem; margin: 1rem 0; background: #1a1a1a; }
+        .faq-item strong { color: #05d9e8; display: block; font-size: 1.1rem; margin-bottom: 0.3rem; }
+        /* ---- Tel link ---- */
+        .tel-link { display: inline-block; background: #ff2a6d; color: #0d0d0d !important; text-decoration: none !important; padding: 0.5rem 1.5rem; font-weight: 800; font-size: 1.1rem; border: 3px solid #05d9e8; box-shadow: 4px 4px 0 #0d0d0d; transition: 0.2s; }
+        .tel-link:hover { background: #05d9e8; color: #0d0d0d !important; border-color: #ff2a6d; transform: scale(1.05); }
+        /* ---- Lists ---- */
+        ul, ol { padding-left: 1.5rem; margin: 1rem 0; }
+        li { margin: 0.5rem 0; }
+        /* ---- Footer ---- */
+        footer { border-top: 3px solid #ff2a6d; padding: 2rem 0; text-align: center; color: #777; font-size: 0.9rem; }
+        /* ---- Utility ---- */
+        .text-muted { color: #888; }
+        .highlight { background: #ff2a6d22; padding: 0.2rem 0.4rem; }
+        .btn-group { display: flex; gap: 1rem; flex-wrap: wrap; margin: 1.5rem 0; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="#" style="font-weight:900; font-size:1.4rem; color:#ff2a6d; text-decoration:none;">여노형</a>
+            <button class="hamburger" aria-label="메뉴 열기">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="/">홈</a></li>
+                <li><a href="/info">정보</a></li>
+                <li><a href="/review">리뷰</a></li>
+                <li><a href="/map">지도</a></li>
+                <li><a href="/contact">문의</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="container">
+            <h1>여의도 노래방 정보</h1>
+            <p>형, 여의도에서 노래방 갈 생각이면 <strong>이 정보는 필수야</strong>. 내가 직접 20군데 넘게 돌아다니면서 가격, 시설, 분위기 다 체크했어. 국회의사당 근처에서 증권가, IFC몰까지 다 커버함. <br><span class="highlight">이거 보고 가면 호구 안 당함</span></p>
+
+            <div class="btn-group">
+                <a href="tel:010-1234-5678" class="tel-link">📞 전화로 물어보기</a>
+                <a href="#price" class="tel-link" style="background:#05d9e8; border-color:#ff2a6d;">💰 가격 한눈에</a>
+            </div>
+        </section>
+
+        <section class="container" id="price">
+            <h2>💰 가격 비교표</h2>
+            <p>형들아, 여의도 노래방 가격 진짜 천차만별이야. 코인노래방은 1곡에 500원부터 시작하는 데 있는 반면, 룸노래방은 기본 3만원부터. 내가 정리한 표 보면서 골라봐.</p>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>🎤 코인노래방 A</h3>
+                    <p class="price">1곡 500원</p>
+                    <p>여의도역 3번 출구 바로 앞. 기계 상태 좋고 곡 업데이트 빠름. 사람 많으면 웨이팅 있음.</p>
+                    <span class="tag">가성비 최고</span>
+                </div>
+                <div class="card">
+                    <h3>🎤 룸노래방 B</h3>
+                    <p class="price">2시간 3만원</p>
+                    <p>국회의사당 근처. 방음 끝내줌. 맥주 무제한 서비스도 있음. 회식 장소로 딱이야.</p>
+                    <span class="tag">회식 추천</span>
+                </div>
+                <div class="card">
+                    <h3>🎤 코인노래방 C</h3>
+                    <p class="price">30분 3,000원</p>
+                    <p>IFC몰 지하. 깔끔하고 현대적인 인테리어. 커플끼리 오기 좋아. 별점 4.5</p>
+                    <span class="tag">데이트 코스</span>
+                </div>
+                <div class="card">
+                    <h3>🎤 룸노래방 D</h3>
+                    <p class="price">1시간 2만원</p>
+                    <p>증권가 뒷골목. 가성비 룸노래방 원탑. 오래된 감성인데 시설은 깨끗해. 혼자 가도 됨.</p>
+                    <span class="tag">혼노바 가능</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>📍 지역별 노래방 꿀팁</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>🏛️ 국회의사당 주변</h3>
+                    <p>국회 근처는 룸노래방이 많아. 주로 정치인, 보좌관들이 오는 곳이라 시설 좋고 조용함. 가격대는 좀 있는 편인데 대신 서비스가 좋아. <span class="highlight">야간 시간대는 미리 예약 필수</span></p>
+                </div>
+                <div class="card">
+                    <h3>📈 증권가/여의도역</h3>
+                    <p>여의도역 주변은 코인노래방 밀집 지역. 점심시간이나 퇴근 시간대에 직장인들로 북적임. <span class="highlight">오후 2-4시가 골든타임</span> – 사람 적고 가격도 저렴함.</p>
+                </div>
+                <div class="card">
+                    <h3>🛍️ IFC몰/현대백화점</h3>
+                    <p>쇼핑하다가 갑자기 노래방 가고 싶을 때? IFC 지하에 있는 코인노래방 추천. 깔끔하고 에어컨 빵빵. 단점은 주말에 사람 많음. <span class="highlight">웨이팅 평균 15분</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>❓ 자주 묻는 질문</h2>
+            <div class="faq-item">
+                <strong>Q: 여의도 노래방 중에 무료 주차 되는 곳 있어?</strong>
+                <p>A: 몇 군데 있어. 룸노래방 D는 2시간 무료 주차 지원함. 코인노래방은 보통 안 되니까 대중교통 이용하는 게 낫다.</p>
+            </div>
+            <div class="faq-item">
+                <strong>Q: 혼자 가도 괜찮은 노래방?</strong>
+                <p>A: 당연하지! 코인노래방은 혼밥하듯 혼노방 가능. 특히 코인노래방 C는 1인 부스도 있어서 완전 프라이빗함. 룸노래방 D도 혼자 가는 사람 종종 봄.</p>
+            </div>
+            <div class="faq-item">
+                <strong>Q: 1시간에 얼마 정도 생각해야 돼?</strong>
+                <p>A: 코인노래
+</body>
+</html>
